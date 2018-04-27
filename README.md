@@ -2,8 +2,8 @@
 
 **WORK IN PROGRESS** :construction_worker_man:
 - [x] Forward propagation
-- [] Define the hybrid loss Function
-- [] Backward propagation
+- [ ] Define the hybrid loss Function
+- [ ] Backward propagation
 
 
 PyTorch based implementation of https://arxiv.org/pdf/1406.2661.pdf
