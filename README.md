@@ -1,6 +1,6 @@
 #### Semantic Segmentation using Adversarial Networks
 
-**WORK IN PROGRESS** :construction_worker_man:
+## **WORK IN PROGRESS** :construction_worker_man:
 - [x] Forward propagation
 - [ ] Define the hybrid loss Function
 - [ ] Backward propagation
