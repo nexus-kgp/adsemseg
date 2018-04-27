@@ -1,8 +1,12 @@
 #### Semantic Segmentation using Adversarial Networks
 
-[] Work in Progress
+**WORK IN PROGRESS** :construction_worker_man:
+- [x] Forward propagation
+- [] Define the hybrid loss Function
+- [] Backward propagation
 
-PyTorch based implementation of https://arxiv.org/pdf/1406.2661.pdf 
+
+PyTorch based implementation of https://arxiv.org/pdf/1406.2661.pdf
 
 ## About the paper in brief
 
@@ -65,5 +69,5 @@ ie :
 In the Segmentor's training funtion, we replace the second term by
 
  ![alt](https://lh3.googleusercontent.com/bVPQWqF4_mDWe_NpmokrgBamG6jLe2g6RgKQhJc8MxaswQxDr8r4O4FLbPPqlX7VGHtiSkpbgusiN2ehUaAqqzJiF-zAyV7xixkhNKKlNh0B5kKiqEPEmpNqyvfq9IPoi_AdnehAhkf52WXG_DpCL7QVyEMh8mUIV4APksilcKAdvAdqpqJ4u9GpFXTXjU8K4LSgWLoK9gy8KoKpBpTXqPDRu7N_fudzO55JMI_6rwX4dV2PVAMHXgT-jQtJS_Vfq--oEAVURSd13bGxH41Y9rnQAP4k6T30UxPdkmckE8TLILpc5KFJXJyPdfvS53D_hq2W08Xj8uWCnD_V6hLS9dQqK2rgvx9d90GjlB93Y43nVDnEAcOUmx9AHynZM9RalnDe-mbC4EURBLdGVJOrdu0h3c8aWwK5_iReOjkmOb3_8gOCde5mE8TY4dTuPvEEHmyyqzbTuGJ56TVcTex7R1ubXW8HD3Ez-XXcnsY3PtbMCOzjXmKGRXUKhtomQ_3hznmlNwvdKcNaLKsJFiISGwbfGM1WpDo9gHushrueesaVmAIviHeI-KD4BRWCb5RJPAZDwu2J41Rc5lTA8MfTDD10CZ5DhJTdf5_pB_w=w250-h34-no "seg model")
- 
+
 The reason behind this is described in https://arxiv.org/pdf/1406.2661.pdf .
