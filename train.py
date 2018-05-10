@@ -22,7 +22,7 @@ def initialize_fcn32s(n_classes):
     try:
         segmentor = segmentor(n_classes=n_classes)
         vgg16 = models.vgg16(pretrained=True)
-        segmentor.init_vgg16_params(vgg16)
+        # segmentor.init_vgg16_params(vgg16)
     except:
         print('Error occured in initialising fcn32s')
         sys.exit(1)

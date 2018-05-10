@@ -51,6 +51,14 @@ class pascalVOCLoader(data.Dataset):
 
         if self.is_transform:
             img, lbl = self.transform(img, lbl)
+        # import pudb;pu.db
+
+        cl = np.zeros((21,256,256))
+        for j,row in enumerate(lbl):
+            for i,col in enumerate(row):
+                # cl[row][col][np.where(np.all(maps==col,axis=1))[0][0]] = 1
+                cl[col][j][i] = 1
+        lbl = cl
 
         return img, lbl
 
@@ -74,6 +82,14 @@ class pascalVOCLoader(data.Dataset):
         img = torch.from_numpy(img).float()
         lbl = torch.from_numpy(lbl).long()
         return img, lbl
+
+    def ohify_labels(self,labels):
+        cl = np.zeros((256,256,21))
+        for j,row in enumerate(labels):
+            for i,col in enumerate(row):
+                # cl[row][col][np.where(np.all(maps==col,axis=1))[0][0]] = 1
+                cl[j][i][col.data[0]] = 1
+        return cl
 
 
     def get_pascal_labels(self):

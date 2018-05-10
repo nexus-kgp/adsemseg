@@ -36,7 +36,6 @@ def ohify(img):
                 cl[j][i][temp[tuple(col.tolist())]] = 1
             except KeyError as e:
                 pass
-        break
     return cl
 
 def ohify_and_save(path):
@@ -48,6 +47,16 @@ def ohify_and_save(path):
                 print(e)
             oheified = ohify(img)
             np.savez_compressed("./ohe/{}".format(file),oheified)
+
+
+def ohify_labels(labels):
+    cl = np.zeros((256,256,21))
+    for j,row in enumerate(labels):
+        for i,col in enumerate(row):
+            # cl[row][col][np.where(np.all(maps==col,axis=1))[0][0]] = 1
+            cl[j][i][col.data[0]] = 1
+    return cl
+
 
 
 
