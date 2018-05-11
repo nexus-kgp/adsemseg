@@ -24,5 +24,8 @@ class LargeFOV(nn.Module):
         res = F.relu(self.conv3_1(res))
         res = self.conv3_2(res)
         res = F.avg_pool2d(res, kernel_size=(res.shape[2], res.shape[3]))
-        out = res.view((res.shape[0],res.shape[1]))
-        return out
+        # out = res.view((res.shape[0],res.shape[1]))
+        res = F.softmax(res)
+        n =1 
+        return res.view(n,-1).transpose(0,1)[0]
+        # return out
